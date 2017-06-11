@@ -55,6 +55,9 @@ checkstyle {
 
 tasks.withType(Checkstyle) {
   reports {
-    html.destination rootProject.file("build/reports/checkstyle.html")
+    html {
+	  enabled true
+	  destination rootProject.file("build/reports/checkstyle.html")
+	}
   }
 }
