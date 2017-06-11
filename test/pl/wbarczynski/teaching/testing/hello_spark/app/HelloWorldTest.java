@@ -2,6 +2,8 @@ package pl.wbarczynski.teaching.testing.hello_spark.app;
 
 import static org.junit.Assert.assertEquals;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+
 import org.junit.Test;
 
 import spark.Request;
@@ -18,6 +20,7 @@ public class HelloWorldTest {
     assertEquals(expected, actualValue);
   }
 
+  @SuppressFBWarnings("SIC")
   protected class RequestMock extends Request {
     public String returnedValue;
 
