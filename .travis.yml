@@ -1,0 +1,5 @@
+language: java
+
+// Tell Travis to use Java 8
+jdk:
+  - oraclejdk8
